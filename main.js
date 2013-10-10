@@ -19,6 +19,9 @@ var $ = {
 		if (c !== undefined && c !== 0) {
 			i.setAttribute("class",c);
 		}
+		else {
+			i.setAttribute("class","d-lib-light")
+		}
 		document.body.appendChild(i);
 	}
 }
