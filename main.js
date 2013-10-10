@@ -1,7 +1,8 @@
 var $ = {
-	create : function(t,p,o) {
-		var i = document.createElement("INPUT");
-		var ii = i.setAttribute("type",t);
+	create : function(t1,t2,p,o) {
+		ti.toUpperCase();
+		var i = document.createElement(t1);
+		var ii = i.setAttribute("type",t2);
 		var iii = i.setAttribute("placeholder",p);
 		document.body.appendChild(i);
 	}
