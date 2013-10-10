@@ -1,6 +1,36 @@
-.d-lib-light {
+input.d-lib-light {
 	color: black;
-	border-radius: 7px;
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 2px;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	font-size: 1.1em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+input.d-lib-light:focus {
 	border: 1px solid dodgerblue;
+	box-shadow: 0 0 7px dodgerblue;
+}
+
+button.d-lib-light {
+	background: linear-gradient(to bottom,dodgerblue,blue);
+	border-radius: 5px;
+	color: white;
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
+	font-size: 1.1em;
 	outline: none;
+	border: none;
+	padding: 5px;
+	box-shadow: 3px 3px 0 darkblue;
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+}
+
+button.d-lib-light:active {
+	box-shadow: none;
+	top: 3px;
+	left: 3px;
 }
