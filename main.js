@@ -1,9 +1,8 @@
-function $() {
-	this.create = function(t,p,o) {
+var $ = {
+	create : function(t,p,o) {
 		var i = document.createElement("INPUT");
-		i.setAttribute("type",t.toString());
-		i.setAttribute("placeholder",p.toString());
-		i.setAttribute("onclick",o.toString());
+		var ii = i.setAttribute("type",t);
+		var iii = i.setAttribute("placeholder",p);
 		document.body.appendChild(i);
 	}
 }
