@@ -26,5 +26,5 @@ var $ = {
 	}
 }
 
-$.create('p',undefined,undefined,undefined,"the","div");
+$.create('input','text',undefined,undefined,"the");
 
