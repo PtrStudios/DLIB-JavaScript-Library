@@ -1,5 +1,5 @@
 var $ = {
-	create : function(t1,t2,p,v,h,c,o) {
+	create : function(t1,t2,p,v,h,c,id,o) {
 		var i = document.createElement(t1);
 		if (t2 !== undefined && t2 !== 0) {
 			i.setAttribute("type",t2);
@@ -22,9 +22,12 @@ var $ = {
 		else {
 			i.setAttribute("class","d-lib-light")
 		}
+        if (id) {
+            i.setAttribute("id",id);
+        }
 		document.body.appendChild(i);
 	}
 }
 
-$.create('input','text',undefined,undefined,"the");
+
 

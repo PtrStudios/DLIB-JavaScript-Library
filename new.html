@@ -13,11 +13,12 @@
 	<button class="d-lib-dark" onclick="$.create('button',0,0,0,'Button','d-lib-dark');">Click Me!</button>
     <script>
         var a = document.getElementById('f');
-        a.onkeypress = function(e) {
-            var key = e.keyCode || e.which;
-            if (key === 9) {
+        a.onkeydown = function(e) {
+            var k = e.which;
+            if (k === 9) {
                 e.preventDefault();
-                $.create('input','text','form',0,0,'d-lib-dark');
+                $.create('input','text',0,0,0,'d-lib-dark','g');
+                g.focus();
             }
         }
     </script>
